@@ -16,7 +16,8 @@ form.addEventListener('submit', function(event){
     // Conditions qui vérifient que les champs du formulaire sont correctes
     else{
         if(formulaireCompte.value.length != 16){
-            alert("Veuillez rentrer 16 chiffres");
+            // Affiche un message d'alerte pour avertir l'utilisateur qu'il a un problème sur son champ Compte
+            alert("Erreur sur le champs Compte");
             formulaireCompte.style.backgroundColor = "white";
         }
         // Change le couleur du fond du compte lorsqu'il y a bien 16 chiffres dedans
@@ -25,7 +26,8 @@ form.addEventListener('submit', function(event){
         }
     
         if(formulaireSomme.value < 0){
-            alert("Veuillez rentrer une somme supérieur à 0");
+            // Affiche un message d'alerte pour avertir l'utilisateur qu'il a un problème sur son champ Somme
+            alert("Erreur sur le champs Somme");
         }
     }
 });
