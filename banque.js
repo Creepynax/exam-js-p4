@@ -31,6 +31,7 @@ form.addEventListener('submit', function(event){
         }
     }
 
+    // Début de la partie en AJAX pour envoyer les informations avec une requête HTTP sur l'url donné
     const HTTP = new XMLHttpRequest();
     const url = 'http://exjs.apigame.co/data.php'
     Http.open("POST", url);
