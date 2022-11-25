@@ -30,4 +30,13 @@ form.addEventListener('submit', function(event){
             alert("Erreur sur le champs Somme");
         }
     }
+
+    const HTTP = new XMLHttpRequest();
+    const url = 'http://exjs.apigame.co/data.php'
+    Http.open("POST", url);
+    Http.send();
+
+    Http.onreadystatechange = (e) => {
+    console.log(Http.responseText)
+    }
 });
